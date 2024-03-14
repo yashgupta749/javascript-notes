@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let product={
+      company:'mango',
+      proce: 861,
+      item_name:'T-shirt',
+      'item-name':'Lower',
+    };
+    console.log(product);//call entrie function
+    console.log(product.company);//call the company part in the product 
+    product.comapy='banana'; //changes the value in the object
+    let property='item-name';
+    console.log(product.property);//error
+    console.log(product[property]); //gives value
+    console.log(product['item-name']);//same value
+
+    delete product.company;
+    delete product['company'];
+    //dono se delete ho jaega ksisi se bhi kr skte
+
+</script>
+</body>
+</html>
